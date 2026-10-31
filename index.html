@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hasnain Electronic Store</title>
+        <link rel="icon" href="images/download.png">
+    </head>
+    <body>
+        <div id="home">
+        <header>
+<h1>Hasnain Electronic Store
+</h1>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Product</a>
+    <a href="#contact">Contact</a>
+</nav>
+</header>
+<p>Welcome to our electronic store!</p>
+<h2>Our Products</h2>
+<h3>Mobile Phones</h3>
+<p>We sell Mobile Phones.</p>
+<h3>Laptops</h3>
+<p> We sell laptops for student and for office work.</p>
+<h3>Accessories</h3>
+<p>We sell charger,headphones and cables.</p>
+<h2>About Our Store</h2>
+<p>Welcome to Hasnain Electronic Store.We offers electronic products for our customers.</p>
+<h2 id="contact">Contact Us</h2>
+<a
+href="https://wa.me/923085360901?text=Asalamoalikum%21%20Mujhe%20app%20ka%20products%20ka%20baray%20ma%20maloomat%20chahiye"
+target="_blank"
+<button type="button">Chat us on whatsapp</button>
+</a>
+<p>Visit our store for more information. </p>
+<h2>Usefull Links</h2>
+<a href="https://www.google.com">Open google</a>
+<h2>Our Product List</h2>
+<ul>
+    <li>Mobile Phones</li>
+    <li>Laptops</li>
+    <li>Headphones</li>
+    <li>Chargers</li>
+    <li>Smart Watches</li>
+</ul>
+<h2>Top selling products</h2>
+<ol>
+    <li>Samsung Mobiles</li>
+    <li>Hp Laptops</li>
+    <li>Wireless Headphones</li>
+</ol>
+<style>
+    body{
+        background-image:
+        linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),url(images/hasnain.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial;
+    }
+   h1 {
+    color: white;
+   } 
+   h2{
+    color:green ;
+   }
+    .product-card{
+        background-color:white;
+        border: 2px solid gray;
+        padding: 15px;
+        margin: 20px;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+        transition: 0.3s;
+    }
+    .product-card:hover{
+        transform: translateY(-5px);
+    }
+        .Products{
+            display:flex;
+            gap: 20px
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 600px){
+            .Products{
+                flex-direction: column;
+                align-items: center;
+            }
+            nav{
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+        header{
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align:center;
+            border-radius: 10px;
+        }
+        header a{
+            color: white;
+            text-decoration:none ;
+            margin: 10px;
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+       nav a:hover {
+        color: yellow;
+       }
+       footer{
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+       }
+
+   </style>
+   <div class="Products">
+   <div class="product-card" id="products">
+    <h2>Samsung Mobile</h2>
+    <img src="images/mobile.jpg"
+    width="200">
+    <p>Price: Rs. 25,000</p>
+    <a
+    href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
+    target="_blank"
+    style="text-decoration: none;"
+    <button type="button">Buy Now</button>
+   </a>
+</div>
+<div class="product-card">
+    <h2>iphone</h2>
+    <img src="images/iphone.jpg"
+    width="200">
+    <p>Price: Rs. 90,000</p>
+    <a
+    href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
+    target="_blank"
+    style="text-decoration: none;"
+    <button type="button">Buy Now</button>
+</div>
+   </div>
+   <footer>
+   <h3>Hasnain Electronic Store</h3>
+   <p>&copy All Rights Reseved</p>
+   <p>Contact:03085360901</p>
+   </footer>
+        </div>
+   </body>
+</html> 
