@@ -3,8 +3,10 @@
     <head>
         <title>Hasnain Electronic Store</title>
         <link rel="icon" href="images/download.png">
+        <link href="./output.css"
+        rel="stylesheet">
     </head>
-    <body>
+    <body class="text-2xl font-bold">
         <div id="home">
         <header>
 <h1>Hasnain Electronic Store
@@ -28,7 +30,7 @@
 <h2 id="contact">Contact Us</h2>
 <a
 href="https://wa.me/923085360901?text=Asalamoalikum%21%20Mujhe%20app%20ka%20products%20ka%20baray%20ma%20maloomat%20chahiye"
-target="_blank"
+target="_blank">
 <button type="button">Chat us on whatsapp</button>
 </a>
 <p>Visit our store for more information. </p>
@@ -71,7 +73,7 @@ target="_blank"
         width: 250px;
         border-radius: 10px;
         text-align: center;
-        box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+        box-shadow:0px 5px 20px rgba(0,0,0,0.25) ;
         transition: 0.3s;
     }
     .product-card:hover{
@@ -79,7 +81,7 @@ target="_blank"
     }
         .Products{
             display:flex;
-            gap: 20px
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -124,8 +126,8 @@ target="_blank"
        }
 
    </style>
-   <div class="Products">
-   <div class="product-card" id="products">
+   <div class="Products" id="products">
+   <div class="product-card">
     <h2>Samsung Mobile</h2>
     <img src="images/mobile.jpg"
     width="200">
@@ -133,8 +135,11 @@ target="_blank"
     <a
     href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
     target="_blank"
-    style="text-decoration: none;"
-    <button type="button">Buy Now</button>
+    style="text-decoration: none;">
+    <button class="bg-gradient-to-r from-green-600 to-blue-600
+    text-white p-3 rounded-lg hover:scale-105 transition">
+        Buy Now
+    </button>
    </a>
 </div>
 <div class="product-card">
@@ -145,15 +150,34 @@ target="_blank"
     <a
     href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
     target="_blank"
-    style="text-decoration: none;"
-    <button type="button">Buy Now</button>
+    style="text-decoration: none;">
+    <button class="bg-gradient-to-r from-green-600 to-blue-600
+    text-white p-3 rounded-lg hover:scale-105 transition">
+          Buy Now
+    </button>
+    </a>
+</div>
+<div class="product-card">
+    <h2>Infinix hot 50</h2>
+    <img src="infinix.jpg"
+    width="200">
+    <p>Price : Rs. 35,000</p>
+    <a
+    href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
+    target="_blank"
+    style="text-decoration: none;">
+    <button class="bg-gradient-to-r from-green-600 to-blue-600
+    text-white p-3 rounded-lg hover:scale-105 transition">
+                Buy Now
+    </button>
+</a>
 </div>
    </div>
-   <footer>
+   <footer> 
    <h3>Hasnain Electronic Store</h3>
    <p>&copy All Rights Reseved</p>
    <p>Contact:03085360901</p>
    </footer>
         </div>
    </body>
-</html> 
+</html>
