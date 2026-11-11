@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
         <title>Hasnain Electronic Store</title>
         <link rel="icon" href="images/download.png">
         <link href="./output.css"
@@ -8,6 +11,8 @@
     </head>
     <body class="text-2xl font-bold">
         <div id="home">
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <header>
 <h1>Hasnain Electronic Store
 </h1>
@@ -19,6 +24,9 @@
 </header>
 <p>Welcome to our electronic store!</p>
 <h2>Our Products</h2>
+<button class="btn btn-success">
+    My first Bootstrap Button
+</button>
 <h3>Mobile Phones</h3>
 <p>We sell Mobile Phones.</p>
 <h3>Laptops</h3>
@@ -27,11 +35,11 @@
 <p>We sell charger,headphones and cables.</p>
 <h2>About Our Store</h2>
 <p>Welcome to Hasnain Electronic Store.We offers electronic products for our customers.</p>
-<h2 id="contact">Contact Us</h2>
+<h2 id="contact">For More Details Contact Us link given below </h2>
 <a
 href="https://wa.me/923085360901?text=Asalamoalikum%21%20Mujhe%20app%20ka%20products%20ka%20baray%20ma%20maloomat%20chahiye"
 target="_blank">
-<button type="button">Chat us on whatsapp</button>
+<button type="button">our whatsapp</button>
 </a>
 <p>Visit our store for more information. </p>
 <h2>Usefull Links</h2>
@@ -127,53 +135,90 @@ target="_blank">
        }
 
    </style>
-   <div class="Products grid grid-col-1 md:grid-col-2 lg:grid-col-3 gap-4"id="products">
-   <div class="product-card shadow-lg hover:shadow-xl transition rounded-xl border-2 !border-red-500">
-    <h2 class="!text-red-500">Samsung Mobile</h2>
-    <img src="images/mobile.jpg"
-    width="200">
-    <p>Price: Rs. 25,000</p>
-    <a
-    href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
-    target="_blank"
-    style="text-decoration: none;">
-    <button class="bg-gradient-to-r from-green-600 to-blue-600
-    text-white p-3 rounded-lg !hover:bg-red-500 hover:scale-105 transition">
-        Buy Now
-    </button>
-   </a>
+<div class="container" id="products">
+
+    <div class="row g-4">
+
+        <!-- Samsung Mobile -->
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+
+            <div class="product-card border-2 !border-red-500">
+
+                <h2 class="!text-red-500">Samsung Mobile</h2>
+
+                <img src="images/mobile.jpg" width="200" alt="Samsung Mobile">
+
+                <p>Price: Rs. 25,000</p>
+
+                <a href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
+                target="_blank" style="text-decoration:none;">
+
+                    <button class="btn btn-danger">
+                        Buy Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- iPhone -->
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+
+            <div class="product-card border-2 !border-yellow-500">
+
+                <h2 class="!text-yellow-500">iPhone</h2>
+
+                <img src="images/iphone.jpg" width="200" alt="iPhone">
+
+                <p>Price: Rs. 90,000</p>
+
+                <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
+                target="_blank" style="text-decoration:none;">
+
+                    <button class="btn btn-warning">
+                        Buy Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Infinix Mobile -->
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+
+            <div class="product-card border-2 !border-green-500">
+
+                <h2 class="!text-green-500">Infinix Hot 50</h2>
+
+                <img src="infinix.jpg" width="200" alt="Infinix Hot 50">
+
+                <p>Price: Rs. 35,000</p>
+
+                <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
+                target="_blank" style="text-decoration:none;">
+
+                    <button class="btn btn-success">
+                        Buy Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
-<div class="product-card shadow-lg hover:shadow-xl transition rounded-xl border-2 !border-yellow-500">
-    <h2 class="!text-yellow-500">iphone</h2>
-    <img src="images/iphone.jpg"
-    width="200">
-    <p>Price: Rs. 90,000</p>
-    <a
-    href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
-    target="_blank"
-    style="text-decoration: none;">
-    <button class="bg-gradient-to-r from-green-600 to-blue-600
-    text-white p-3 rounded-lg !hover:bg-yellow-500 hover:scale-105 transition">
-          Buy Now
-    </button>
-    </a>
-</div>
-<div class="product-card shadow-lg hover:shadow-xl transition rounded-xl border-2 !border-green-500">
-    <h2 class="!text-green-500">Infinix hot 50</h2>
-    <img src="infinix.jpg"
-    width="200">
-    <p>Price : Rs. 35,000</p>
-    <a
-    href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
-    target="_blank"
-    style="text-decoration: none;">
-    <button class="bg-gradient-to-r from-green-600 to-blue-600
-    text-white p-3 rounded-lg !hover:bg-green-500 hover:scale-105 transition">
-                Buy Now
-    </button>
-</a>
-</div>
-   </div>
    <footer> 
    <h3>Hasnain Electronic Store</h3>
    <p>&copy All Rights Reseved</p>
