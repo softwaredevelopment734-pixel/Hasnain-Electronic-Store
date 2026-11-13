@@ -8,21 +8,51 @@
         <link rel="icon" href="images/download.png">
         <link href="./output.css"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="text-2xl font-bold">
-        <div id="home">
-        <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <header>
-<h1>Hasnain Electronic Store
-</h1>
-<nav class="flex flex-row">
-    <a href="#home">Home</a>
-    <a href="#products">Product</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <div id="home"> 
+       <header>
+        <nav class="navbar
+        navbar-expand-lg navbar-dark bg-primary sticky-top">
+         <div class="container">
+            <a class="navbar-brand"
+            href="#home">
+        Hasnain Electronic Store
+    </a>
+    <button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse" data-bs-target="#myNavbar">
+<span
+class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="navbar-nav ms-auto">
+    <li
+    class="nav-item">
+    <a
+    class="nav-link active"
+    href="#home">Home</a>
+       </li>
+       <li
+       class="nav-item">
+         <a
+         class="nav-link"
+         href="#products">Products</a>
+         </li>
+         <li
+         class="nav-item">
+        <a
+        class="nav-link"
+        href="#contact">Contact</a>
+                           </li>
+                       </ul>
+                  </div>
+              </div>
+        </nav>
 </header>
-<p>Welcome to our electronic store!</p>
+<div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
 <h2>Our Products</h2>
 <button class="btn btn-success">
     My first Bootstrap Button
@@ -145,16 +175,15 @@ target="_blank">
 
             <div class="product-card border-2 !border-red-500">
 
-                <h2 class="!text-red-500">Samsung Mobile</h2>
-
+                <h2 class="!text-red-500">
+                    Samsung Mobile
+                    <span class="badge text-bg-secondary">New</span></h2>
                 <img src="images/mobile.jpg" width="200" alt="Samsung Mobile">
-
-                <p>Price: Rs. 25,000</p>
-
-                <a href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
+                  <p>Price: Rs. 25,000
+                    <a href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
                 target="_blank" style="text-decoration:none;">
 
-                    <button class="btn btn-danger">
+                    <button type="button" class="btn btn-outline-danger btn-lg">
                         Buy Now
                     </button>
 
@@ -171,8 +200,10 @@ target="_blank">
 
             <div class="product-card border-2 !border-yellow-500">
 
-                <h2 class="!text-yellow-500">iPhone</h2>
-
+                <h2 class="!text-yellow-500">
+                    iPhone
+                <span class="badge text-bg-secondary">New</span>
+                </h2>
                 <img src="images/iphone.jpg" width="200" alt="iPhone">
 
                 <p>Price: Rs. 90,000</p>
@@ -180,7 +211,7 @@ target="_blank">
                 <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
                 target="_blank" style="text-decoration:none;">
 
-                    <button class="btn btn-warning">
+                    <button type="button" class="btn btn-outline-warning btn-lg">
                         Buy Now
                     </button>
 
@@ -197,7 +228,10 @@ target="_blank">
 
             <div class="product-card border-2 !border-green-500">
 
-                <h2 class="!text-green-500">Infinix Hot 50</h2>
+                <h2 class="!text-green-500">
+                    Infinix Hot 60i
+                <span class="badge text-bg-secondary">New</span>
+                </h2>
 
                 <img src="infinix.jpg" width="200" alt="Infinix Hot 50">
 
@@ -206,7 +240,7 @@ target="_blank">
                 <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
                 target="_blank" style="text-decoration:none;">
 
-                    <button class="btn btn-success">
+                    <button type="button" class="btn btn-outline-success btn-lg">
                         Buy Now
                     </button>
 
@@ -225,5 +259,7 @@ target="_blank">
    <p>Contact:03085360901</p>
    </footer>
         </div>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
    </body>
 </html>
