@@ -9,6 +9,9 @@
         <link href="./output.css"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-indicators [data-bs-target] {background-color: black;}
+    </style>
     </head>
     <body class="text-2xl font-bold">
         <div id="home"> 
@@ -50,8 +53,44 @@ class="navbar-toggler-icon"></span>
               </div>
         </nav>
 </header>
-<div class="alert alert-primary" role="alert">
-  This is a primary alert—check it out!
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/mobile.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Samsung Mobile</h5>
+        <p>Price:Rs 25,000</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/iphone.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Iphone</h5>
+      <p>Price: Rs 90,000</p>
+      </div>
+    <div class="carousel-item">
+        </div>
+      <img src="infinix.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Infinix</h5>
+      <p>Price: Rs 35,000</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 <h2>Our Products</h2>
 <button class="btn btn-success">
@@ -165,93 +204,62 @@ target="_blank">
        }
 
    </style>
-<div class="container" id="products">
+   <div class="container" id="products">
 
-    <div class="row g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
         <!-- Samsung Mobile -->
-
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-
-            <div class="product-card border-2 !border-red-500">
-
-                <h2 class="!text-red-500">
-                    Samsung Mobile
-                    <span class="badge text-bg-secondary">New</span></h2>
-                <img src="images/mobile.jpg" width="200" alt="Samsung Mobile">
-                  <p>Price: Rs. 25,000
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/mobile.jpg" class="card-img-top" alt="Samsung Mobile">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Mobile
+                        <span class="badge text-bg-secondary">New</span>
+                    </h5>
+                    <p class="card-text">Price: Rs. 25,000</p>
                     <a href="https://wa.me/923085360901?text=Assalam-o-alikum%21Mujhe%20samsung%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2025%2c000"
-                target="_blank" style="text-decoration:none;">
-
-                    <button type="button" class="btn btn-outline-danger btn-lg">
+                       target="_blank" class="btn btn-outline-danger">
                         Buy Now
-                    </button>
-
-                </a>
-
+                    </a>
+                </div>
             </div>
-
         </div>
-
 
         <!-- iPhone -->
-
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-
-            <div class="product-card border-2 !border-yellow-500">
-
-                <h2 class="!text-yellow-500">
-                    iPhone
-                <span class="badge text-bg-secondary">New</span>
-                </h2>
-                <img src="images/iphone.jpg" width="200" alt="iPhone">
-
-                <p>Price: Rs. 90,000</p>
-
-                <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
-                target="_blank" style="text-decoration:none;">
-
-                    <button type="button" class="btn btn-outline-warning btn-lg">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/iphone.jpg" class="card-img-top" alt="iPhone">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone
+                        <span class="badge text-bg-secondary">New</span>
+                    </h5>
+                    <p class="card-text">Price: Rs. 90,000</p>
+                    <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20iphone%20order%20kerna%20hai.%20price%3a%20Rs%2090%2c000"
+                       target="_blank" class="btn btn-outline-warning">
                         Buy Now
-                    </button>
-
-                </a>
-
+                    </a>
+                </div>
             </div>
-
         </div>
 
-
         <!-- Infinix Mobile -->
-
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-
-            <div class="product-card border-2 !border-green-500">
-
-                <h2 class="!text-green-500">
-                    Infinix Hot 60i
-                <span class="badge text-bg-secondary">New</span>
-                </h2>
-
-                <img src="infinix.jpg" width="200" alt="Infinix Hot 50">
-
-                <p>Price: Rs. 35,000</p>
-
-                <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
-                target="_blank" style="text-decoration:none;">
-
-                    <button type="button" class="btn btn-outline-success btn-lg">
+        <div class="col">
+            <div class="card h-100">
+                <img src="infinix.jpg" class="card-img-top" alt="Infinix Hot 60i">
+                <div class="card-body">
+                    <h5 class="card-title">Infinix Hot 60i
+                        <span class="badge text-bg-secondary">New</span>
+                    </h5>
+                    <p class="card-text">Price: Rs. 35,000</p>
+                    <a href="https://wa.me/923085360901?text=Asalam-o-alikum%21Mujhay%20Infinix%20mobile%20order%20kerna%20hai.%20price%3a%20Rs%2035%2c000"
+                       target="_blank" class="btn btn-outline-success">
                         Buy Now
-                    </button>
-
-                </a>
-
+                    </a>
+                </div>
             </div>
-
         </div>
 
     </div>
-
 </div>
    <footer> 
    <h3>Hasnain Electronic Store</h3>
